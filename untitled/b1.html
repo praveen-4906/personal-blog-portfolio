@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cmdcode.com</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo">cmdcode.com</a></div>
+            <div class="navlinks">
+                <a href="index.html">home</a>
+                <a href="blogs.html">blogs</a>
+                <a href="topics.html">topics</a>
+                <a href="projects.html">projects</a>
+                <a href="about.html">about</a>
+            </div>
+            <div class="menubtn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="dropdown">
+            <a href="index.html">home</a>
+            <a href="blogs.html">blogs</a>
+            <a href="topics.html">topics</a>
+            <a href="projects.html">projects</a>
+            <a href="about.html">about</a>
+        </div>
+    </div>
+
+
+    <div class="post">
+        <div class="title">
+            Decoding AI: How does Artificial Intelligence (AI) works
+        </div>
+        <div class="blog">
+            <p>The Intricacies of Artificial Intelligence: A Dive into How AI Functions</p>
+
+<p>Artificial Intelligence (AI) has become a cornerstone of modern technology, influencing various aspects of our daily lives. From the voice assistants on our phones to the recommendation engines on streaming services, AI's applications are vast and varied. But what exactly is AI, and how does it operate?</p>
+
+<p>At its core, AI is a branch of computer science that aims to create machines capable of performing tasks that would typically require human intelligence. These tasks include interpreting speech, recognizing images, making decisions, and translating languages. The development of AI systems involves the use of algorithms and models that can analyze data, identify patterns, and make decisions based on that analysis.</p>
+
+<p>One of the main tools powering AI is machine learning (ML), a subset of AI that allows systems to learn from data, identify patterns, and make decisions with minimal human intervention. Machine learning algorithms are fed large sets of data and use statistical techniques to learn how to perform a task by finding patterns in the data.</p>
+
+<p>Deep learning, a form of machine learning, takes this a step further by using neural networks with many layers (hence 'deep') to analyze complex patterns in data. This is the technology behind some of the most advanced AI applications, such as self-driving cars and sophisticated image recognition systems.</p>
+
+<p>AI operates by combining these large datasets with intelligent, fast-processing algorithms. It can run through multiple tasks quickly, mimicking the decision-making processes of the human mind. This capability allows AI to perform a wide range of tasks, from simple ones like filtering spam emails to complex ones like diagnosing diseases.</p>
+
+<p>The future of AI is promising and continually evolving. While we currently utilize what is known as 'weak' or 'narrow' AI—systems designed to perform specific tasks—there is ongoing research into 'strong' AI, which aims to emulate human cognitive abilities more broadly and could solve a wide array of problems without being specifically trained for them.</p>
+
+<p>The implications of AI are profound, offering the potential to revolutionize industries and improve our quality of life. However, it also raises important ethical and regulatory questions that need to be addressed as the technology advances.</p>
+
+<p>For a deeper understanding of AI and its workings, one can refer to comprehensive articles and resources available online, such as those found on Forbes and Built In, which provide detailed insights into the intricacies of AI technology.</p>
+
+<p>In conclusion, AI works by simulating human intelligence through the use of complex algorithms and data analysis. Its ability to learn and adapt makes it a powerful tool that is reshaping the technological landscape. As we continue to explore the capabilities of AI, it is essential to consider the broader implications of its integration into society.</p>
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="heading1">
+            QUICK LINKS
+        </div>
+        <div class="quicklinks">
+            <a href="index.html">home</a>
+            <a href="blogs.html">blogs</a>
+            <a href="topics.html">topics</a>
+            <a href="projects.html">projects</a>
+            <a href="about.html">about</a>
+        </div>
+    </div>
+    <script>
+        const menubtn = document.querySelector('.menubtn')
+        const menubtnicon = document.querySelector('.menubtn i')
+        const dropdown = document.querySelector('.dropdown')
+
+        menubtn.onclick = function () {
+            dropdown.classList.toggle('open')
+            const isOpen = dropdown.classList.contains('open')
+
+            menubtnicon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cmdcode.com</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo">cmdcode.com</a></div>
+            <div class="navlinks">
+                <a href="index.html">home</a>
+                <a href="blogs.html">blogs</a>
+                <a href="topics.html">topics</a>
+                <a href="projects.html">projects</a>
+                <a href="about.html">about</a>
+            </div>
+            <div class="menubtn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="dropdown">
+            <a href="index.html">home</a>
+            <a href="blogs.html">blogs</a>
+            <a href="topics.html">topics</a>
+            <a href="projects.html">projects</a>
+            <a href="about.html">about</a>
+        </div>
+    </div>
+
+
+    <div class="post">
+        <div class="title">
+            Google deepmind: GeminiAI
+        </div>
+        <div class="blog">
+            <p>Exploring the Frontiers of Artificial Intelligence with Gemini AI</p>
+
+<p>The landscape of artificial intelligence (AI) is constantly evolving, and one of the most significant recent developments is the emergence of Gemini AI. This advanced AI model represents a collaborative effort by Google's DeepMind and Google Brain teams, aiming to push the boundaries of natural language processing and multimodal understanding.</p>
+
+<p>Gemini AI stands out as a multimodal model, which means it has the capability to process and understand not just text, but also images, videos, and audio. This versatility opens up new possibilities for AI applications, making Gemini a powerful tool for a wide range of tasks, from complex mathematical problems to code generation in various programming languages.</p>
+
+<p>The implications of such a model are vast. For instance, Gemini's ability to understand context across different types of data could significantly enhance learning and planning software, potentially transforming how we interact with technology on a daily basis. It could also lead to more intuitive and efficient search engines, personal assistants, and educational tools.</p>
+
+<p>Moreover, Gemini AI is designed to be user-friendly, integrating seamlessly with familiar platforms like Gmail and Google Docs. This integration suggests a future where AI assistance is readily available, enhancing productivity and creativity without the need for specialized knowledge or tools.</p>
+
+<p>As we look to the future, the potential of Gemini AI and similar models is immense. They promise to make AI more accessible and useful for everyone, everywhere, democratizing the benefits of these technological advancements. The journey of AI is far from over, and with innovations like Gemini, we are just beginning to glimpse what is possible in this exciting field.</p>
+
+<p>For more information on Gemini AI and its capabilities, you can visit the official Gemini page or read Google's blog post detailing the model.</p>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="heading1">
+            QUICK LINKS
+        </div>
+        <div class="quicklinks">
+            <a href="index.html">home</a>
+            <a href="blogs.html">blogs</a>
+            <a href="topics.html">topics</a>
+            <a href="projects.html">projects</a>
+            <a href="about.html">about</a>
+        </div>
+    </div>
+    <script>
+        const menubtn = document.querySelector('.menubtn')
+        const menubtnicon = document.querySelector('.menubtn i')
+        const dropdown = document.querySelector('.dropdown')
+
+        menubtn.onclick = function () {
+            dropdown.classList.toggle('open')
+            const isOpen = dropdown.classList.contains('open')
+
+            menubtnicon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

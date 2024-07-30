@@ -1,0 +1,480 @@
+:root {
+    --bgcolor : #FFFFFF;
+    --boxcolor : #F1F3F4;
+    --textcolor : #000000;
+    --textcoloronblue : #FFFFFF;
+    --dddark : #042449;
+    --ddlight : #043B7C;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background-color: var(--bgcolor);
+    color: var(--textcolor);
+    position: relative;
+}
+
+a,a:hover,a:active,a:visited {
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+.navbar {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+.logo img {
+    width: 32px;
+    padding-right: 10px;
+}
+
+.logo a {
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--textcoloronblue);
+}
+
+.header {
+    background: rgb(34,113,213);
+    background: linear-gradient(125deg, rgba(34,113,213,1) 0%, rgba(133,147,236,1) 100%);
+    color: var(--textcoloronblue);
+}
+
+.navlinks {
+    color: var(--textcoloronblue);
+    font-weight: 600;
+}
+
+.navlinks a {
+    margin-left: 25px;
+    color: var(--textcoloronblue);
+}
+
+.menubtn {
+    cursor: pointer;
+    display: none;
+}
+
+.abt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 100px;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.desc {
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 16px;
+}
+
+.image {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.image img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.blogs {
+    padding: 0px 100px;
+}
+
+.heading {
+    padding-top: 75px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.heading1 {
+    padding-top: 75px;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--textcoloronblue);
+}
+
+.blogbox {
+    padding-top: 50px;
+}
+
+.blogpost {
+    width: 100%;
+    background-color: var(--boxcolor);
+    display: flex;
+}
+
+.postimg {
+    height: 150px;
+    width: 250px;
+    margin: 8px;
+}
+
+.postimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.posttext {
+    margin: 8px;
+    font-size: 20px;
+}
+
+.blogbox {
+    display: grid;
+    gap: 20px;
+}
+
+.blogs {
+    padding-bottom: 75px;
+}
+
+.footer {
+    padding: 0px 100px;
+    padding-bottom: 75px;
+    background: rgb(4,36,73);
+    background: linear-gradient(125deg, rgba(4,36,73,1) 0%, rgba(5,60,125,1) 100%);
+}
+
+.quicklinks {
+    margin-top: 50px;
+    display: grid;
+    gap: 7.5px;
+}
+
+.quicklinks a {
+    color: var(--textcoloronblue);
+    width: fit-content;
+}
+
+.dropdown {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dddark);
+    position: absolute;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: 5000;
+}
+
+.dropdown.open {
+    height: 250px;
+}
+
+.dropdown a {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bgcolor);
+}
+
+.dropdown a:hover {
+    background-color: var(--ddlight);
+}
+
+.post {
+    padding: 0px 100px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 75px;
+}
+
+.blog {
+    padding-top: 50px;
+    padding-bottom: 59px;
+}
+
+.blog p {
+    padding-bottom: 16px;
+}
+
+.project {
+    padding: 0px 100px;
+    padding-bottom: 180px;
+}
+
+.code {
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.code img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width:850px) {
+    .menubtn {
+        display: block;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0px 30px;
+    }
+
+    .divya {
+        font-size: 15px;
+    }
+
+    .abt {
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        align-items: baseline;
+    }
+
+    .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image img {
+        width: 150px;
+    }
+
+    .name {
+        font-size: 20px;
+        padding-top: 50px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+    .blogs {
+        padding: 0px 30px;
+        padding-bottom: 50px;
+    }
+
+    .heading {
+        font-size: 16px;
+        padding-top: 50px;
+    }
+
+    .heading1 {
+        font-size: 16px;
+        padding-top: 50px;
+    }
+
+    .footer {
+        padding: 0px 30px;
+        padding-bottom: 50px;
+    }
+
+    .quicklinks {
+        margin-top: 25px;
+    }
+
+    .blogbox {
+        padding-top: 25px;
+        gap: 10px;
+    }
+
+    .postimg {
+        margin: 6px;
+        height: 85px;
+        width: 130px;
+        min-width: 130px;
+    }
+
+    .postimg img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .posttext {
+        margin: 6px;
+        font-size: 12px;
+    }
+
+    .post {
+        padding: 0px 30px;
+    }
+    
+    .title {
+        font-size: 16px;
+        font-weight: 600;
+        padding-top: 50px;
+    }
+    
+    .blog {
+        padding-top: 25px;
+        padding-bottom: 34px;
+    }
+    
+    .blog p {
+        padding-bottom: 16px;
+    }
+
+    .project {
+        padding: 0px 30px;
+        padding-bottom: 190px;
+    }
+    
+    .code {
+        padding-top: 25px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+    margin-top: 20px;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f1923;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff4655;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: #0f1923;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
+  
